@@ -1,0 +1,19 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: organization
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: mysql
+    continue-on-error: false
+    url: "jdbc:mysql://localhost:3306/testtree?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true
+          &useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai"
+    username: root
+    password: 123456
+
+
